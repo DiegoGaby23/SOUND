@@ -1,0 +1,34 @@
+html,
+body {
+    display: block;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    background: rgb(21, 34, 47);
+    color: #ffffff;
+}
+
+#activate {
+    margin: 50px;
+    padding: 15px;
+}
+
+/* Les notification s'affiche */
+
+#notify {
+    text-align: justify;
+    margin-left: 25px;
+    padding: 18px;
+}
+
+#notify,
+#notify>* {
+    display: none;
+}
+
+#notify[data],
+#notify[data="detected"]>[data="detected"],
+#notify[data="failed"]>[data="failed"] {
+    display: block;
+}
